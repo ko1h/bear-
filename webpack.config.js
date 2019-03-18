@@ -4,7 +4,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports= {
-  entry: './src/index.js',
+  entry: './js/hungrybear.js',
   output: {
     filename:'bundle.js',
     path: path.resolve(__dirname,'dist')
@@ -18,7 +18,7 @@ module.exports= {
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
       title: 'Journal',
-      template: './src/index.html',
+      template: './src/try.html',
       inject: 'body'
     })
   ],
