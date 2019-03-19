@@ -2,17 +2,17 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
-import {DayPicker} from "./scripts.js";
+import './try.html';
+
+// import { HungerBear } from "./hungerbear.js";
 
 
 $(document).ready(function(){
-  $("#dateForm").submit(function(event){
+  $("#bear-form").submit(function(event){
   event.preventDefault();
-  const grooveDate=  $("#dateInput").val();
-  console.log(grooveDate);
-  const datePicker= new DayPicker();
-  const theObject= datePicker.stringToObject(grooveDate);
-  const dateOfweek= datePicker.findDay();
-  $(".result").text(dateOfweek);
+
+  const playerInput = $("#player1").val();
+  console.log(playerInput);
+
   });
 });
